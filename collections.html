@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections | eG COLLECTIONS | Luxury Fashion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/collection.css">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="header-top">
+                <a href="index.html" class="logo">
+                    <img src="images/logo-removebg-preview.png" alt="eGCollections" style="width: 100px; cursor: pointer;">
+                </a>
+                <div class="header-actions">
+                    <div class="search-container">
+                        <input type="text" class="search-input" placeholder="Search collections...">
+                        <button class="search-btn"><i class="fas fa-search"></i></button>
+                    </div>
+                    <a href="signup.html" class="header-icon">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <a href="wishlist.html" class="header-icon">
+                        <i class="fas fa-heart"></i>
+                        <span class="count-badge wishlist-count">0</span>
+                    </a>
+                    <a href="cart.html" class="header-icon cart-icon">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="count-badge cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+            <nav class="main-navigation">
+                <ul class="main-nav">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item">
+                        <a href="category.html?category=women" class="nav-link">Women</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="category.html?category=men" class="nav-link">Men</a>
+                    </li>
+                    <li class="nav-item active"><a href="collections.html" class="nav-link">Collections</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="signup.html" class="nav-link">SignUp</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Collections</h1>
+            <p>Discover our curated fashion collections that celebrate African heritage and contemporary style</p>
+        </div>
+    </section>
+
+    <!-- Filters Section -->
+    <section class="filters-section">
+        <div class="container">
+            <div class="filters-container">
+                <div class="filter-group">
+                    <select class="filter-select" id="category-filter">
+                        <option value="all">All Categories</option>
+                        <option value="women">Women</option>
+                        <option value="men">Men</option>
+                        <option value="couples">Couples</option>
+                    </select>
+                    <select class="filter-select" id="season-filter">
+                        <option value="all">All Seasons</option>
+                        <option value="spring">Spring 2025</option>
+                        <option value="summer">Summer 2025</option>
+                        <option value="formal">Formal Wear</option>
+                        <option value="business">Business Casual</option>
+                    </select>
+                    <select class="filter-select" id="sort-filter">
+                        <option value="newest">Newest First</option>
+                        <option value="popular">Most Popular</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                    </select>
+                </div>
+                <div class="view-toggle">
+                    <button class="view-btn active" data-view="grid">
+                        <i class="fas fa-th"></i>
+                    </button>
+                    <button class="view-btn" data-view="list">
+                        <i class="fas fa-list"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collections Grid -->
+    <section class="collections-section">
+        <div class="container">
+            <div class="collections-grid" id="collections-grid">
+                <!-- Spring 2025 Collection -->
+                <div class="collection-card" data-category="women" data-season="spring">
+                    <div class="collection-image">
+                        <img src="images/8-removebg-preview.png" alt="Spring 2025 Women's Collection">
+                        <div class="collection-overlay">
+                            <div style="color: white;">
+                                <h4>Elegant Spring Styles</h4>
+                                <p>Fresh and vibrant designs</p>
+                            </div>
+                        </div>
+                        <div class="collection-badge">New</div>
+                    </div>
+                    <div class="collection-content">
+                        <h3 class="collection-title">Spring Elegance 2025</h3>
+                        <p class="collection-description">Embrace the season with our exclusive spring collection featuring lightweight fabrics, vibrant colors, and timeless designs perfect for any occasion.</p>
+                        <div class="collection-meta">
+                            <span>24 Items</span>
+                            <span>Women's Fashion</span>
+                        </div>
+                        <div class="collection-price">Starting from GH₵150</div>
+                        <div class="collection-actions">
+                            <a href="collection.html?id=spring-2025" class="btn-primary">Shop Collection</a>
+                            <a href="#" class="btn-secondary">Preview</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Men's Business Casual -->
+                <div class="collection-card" data-category="men" data-season="business">
+                    <div class="collection-image">
+                        <img src="images/8-removebg-preview.png" alt="Men's Business Casual Collection">
+                        <div class="collection-overlay">
+                            <div style="color: white;">
+                                <h4>Professional Style</h4>
+                                <p>Sophisticated business wear</p>
+                            </div>
+                        </div>
+                        <div class="collection-badge">Popular</div>
+                    </div>
+                    <div class="collection-content">
+                        <h3 class="collection-title">Business Casual</h3>
+                        <p class="collection-description">Sophisticated and versatile pieces that seamlessly transition from office to evening, crafted with premium materials and contemporary cuts.</p>
+                        <div class="collection-meta">
+                            <span>18 Items</span>
+                            <span>Men's Fashion</span>
+                        </div>
+                        <div class="collection-price">Starting from GH₵200</div>
+                        <div class="collection-actions">
+                            <a href="collection.html?id=business-casual" class="btn-primary">Shop Collection</a>
+                            <a href="#" class="btn-secondary">Preview</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formal Wear Collection -->
+                <div class="collection-card" data-category="couples" data-season="formal">
+                    <div class="collection-image">
+                        <img src="images/4-removebg-preview.png" alt="Formal Wear Collection">
+                        <div class="collection-overlay">
+                            <div style="color: white;">
+                                <h4>Luxury Formal Wear</h4>
+                                <p>Perfect for special occasions</p>
+                            </div>
+                        </div>
+                        <div class="collection-badge">Premium</div>
+                    </div>
+                    <div class="collection-content">
+                        <h3 class="collection-title">Formal Wear 2025</h3>
+                        <p class="collection-description">Exquisite formal wear collection perfect for weddings, galas, and high-end events. Features luxurious fabrics and impeccable tailoring.</p>
+                        <div class="collection-meta">
+                            <span>32 Items</span>
+                            <span>Formal Wear</span>
+                        </div>
+                        <div class="collection-price">Starting from GH₵350</div>
+                        <div class="collection-actions">
+                            <a href="collection.html?id=formal-2025" class="btn-primary">Shop Collection</a>
+                            <a href="#" class="btn-secondary">Preview</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Summer Collection -->
+                <div class="collection-card" data-category="women" data-season="summer">
+                    <div class="collection-image">
+                        <img src="images/3-removebg-preview.png" alt="Summer Collection">
+                        <div class="collection-overlay">
+                            <div style="color: white;">
+                                <h4>Summer Vibes</h4>
+                                <p>Light and breezy styles</p>
+                            </div>
+                        </div>
+                        <div class="collection-badge">Hot</div>
+                    </div>
+                    <div class="collection-content">
+                        <h3 class="collection-title">Summer Breeze</h3>
+                        <p class="collection-description">Light, airy, and comfortable pieces perfect for the warm season. Featuring breathable fabrics and vibrant African-inspired prints.</p>
+                        <div class="collection-meta">
+                            <span>28 Items</span>
+                            <span>Summer Wear</span>
+                        </div>
+                        <div class="collection-price">Starting from GH₵120</div>
+                        <div class="collection-actions">
+                            <a href="collections.html?id=summer-2025" class="btn-primary">Shop Collection</a>
+                            <a href="#" class="btn-secondary">Preview</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Men's Casual Collection -->
+                <div class="collection-card" data-category="men" data-season="spring">
+                    <div class="collection-image">
+                        <img src="images/1-removebg-preview.png" alt="Men's Casual Collection">
+                        <div class="collection-overlay">
+                            <div style="color: white;">
+                                <h4>Casual Comfort</h4>
+                                <p>Relaxed everyday style</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collection-content">
+                        <h3 class="collection-title">Urban Casual</h3>
+                        <p class="collection-description">Comfortable and stylish casual wear for the modern man. Perfect for weekends, casual outings, and relaxed social gatherings.</p>
+                        <div class="collection-meta">
+                            <span>22 Items</span>
+                            <span>Men's Casual</span>
+                        </div>
+                        <div class="collection-price">Starting from GH₵100</div>
+                        <div class="collection-actions">
+                            <a href="collection.html?id=urban-casual" class="btn-primary">Shop Collection</a>
+                            <a href="#" class="btn-secondary">Preview</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- African Heritage Collection -->
+                <div class="collection-card" data-category="couples" data-season="formal">
+                    <div class="collection-image">
+                        <img src="images/2-removebg-preview.png" alt="African Heritage Collection">
+                        <div class="collection-overlay">
+                            <div style="color: white;">
+                                <h4>Cultural Pride</h4>
+                                <p>Celebrating African heritage</p>
+                            </div>
+                        </div>
+                        <div class="collection-badge">Heritage</div>
+                    </div>
+                    <div class="collection-content">
+                        <h3 class="collection-title">African Heritage</h3>
+                        <p class="collection-description">A stunning celebration of African culture and traditions, featuring authentic prints, vibrant colors, and contemporary cuts that honor our rich heritage.</p>
+                        <div class="collection-meta">
+                            <span>35 Items</span>
+                            <span>Cultural Wear</span>
+                        </div>
+                        <div class="collection-price">Starting from GH₵180</div>
+                        <div class="collection-actions">
+                            <a href="collection.html?id=african-heritage" class="btn-primary">Shop Collection</a>
+                            <a href="#" class="btn-secondary">Preview</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Collection -->
+    <section class="featured-collection">
+        <div class="container">
+            <div class="featured-content">
+                <div class="featured-text">
+                    <h2>Designer's Choice</h2>
+                    <p>Our signature collection represents the pinnacle of eG Collections' design philosophy. Each piece is carefully crafted to embody the perfect balance between African cultural heritage and contemporary fashion trends.</p>
+                    <p>This exclusive collection features hand-selected fabrics, intricate detailing, and innovative cuts that celebrate the beauty and elegance of African fashion while meeting the demands of modern style.</p>
+                    <a href="collection.html?id=designers-choice" class="btn-primary">Explore Designer's Choice</a>
+                </div>
+                <div class="featured-image">
+                    <img src="images/11-removebg-preview.png" alt="Designer's Choice Collection">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="index.html" class="footer-logo">eG COLLECTIONS</a>
+                    <p>Offering timeless fashion with exceptional quality and meticulous attention to detail for the modern, style-conscious individual celebrating African heritage.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/eGColletion" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/egcollectionafrica" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@eg.collections" class="social-link"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3 class="footer-title">Shop</h3>
+                    <ul>
+                        <li><a href="category.html?category=women">Women</a></li>
+                        <li><a href="category.html?category=men">Men</a></li>
+                        <li><a href="collections.html">Collections</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3 class="footer-title">Information</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3 class="footer-title">My Account</h3>
+                    <ul>
+                        <li><a href="account.html">My Account</a></li>
+                        <li><a href="orders.html">Order History</a></li>
+                        <li><a href="wishlist.html">Wishlist</a></li>
+                        <li><a href="#">Newsletter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2025 eG COLLECTIONS. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/collection.js"></script>
+</body>    
+</html>

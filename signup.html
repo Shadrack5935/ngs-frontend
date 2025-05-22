@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="eG COLLECTIONS - Luxury Fashion with exceptional quality and meticulous attention to detail">
+    <title>eG COLLECTIONS | Luxury Fashion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="header-top">
+                <a href="index.html" class="logo"><img src="images/logo-removebg-preview.png "  alt="eGCollections" style="width: 100px; cursor: pointer;"></a>
+                <div class="header-actions">
+                    <div class="search-container">
+                        <input type="text" class="search-input" placeholder="Search..." aria-label="Search products">
+                        <button class="search-btn" aria-label="Submit search"><i class="fas fa-search"></i></button>
+                    </div>
+                    <a href="account.html" class="header-icon" aria-label="My Account">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <a href="wishlist.html" class="header-icon" aria-label="Wishlist">
+                        <i class="fas fa-heart"></i>
+                        <span class="count-badge wishlist-count" aria-label="Items in wishlist">0</span>
+                    </a>
+                    <a href="cart.html" class="header-icon cart-icon" aria-label="Shopping cart">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="count-badge cart-count" aria-label="Items in cart">0</span>
+                    </a>
+                </div>
+            </div>
+                <nav class="main-navigation">
+                <button class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="main-nav">
+                    <li class="nav-item active" ><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item has-submenu">
+                        <a href="category.html?category=women" class="nav-link">Women</a>
+                        <div class="submenu">
+                            <div class="submenu-column">
+                                <ul>
+                                    <li><a href="category.html?category=women&type=dresses">Dresses</a></li>
+                                    <li><a href="category.html?category=women&type=tops">Tops</a></li>
+                                    <li><a href="category.html?category=women&type=bottoms">Bottoms</a></li>
+                                    <li><a href="category.html?category=women&type=outerwear">Outerwear</a></li>
+                                </ul>
+                            </div>
+                            <div class="submenu-column featured">
+                                <div class="featured-item">
+                                    <img src="images/w3.jpg" alt="Women's Featured Collection">
+                                    <div class="featured-overlay">
+                                        <h4>Women Fashion 2025</h4>
+                                        <a href="collection.html?id=spring-2025" class="btn-secondary">Shop Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                    </li>
+                    <li class="nav-item has-submenu">
+                         <a href="category.html?category=men" class="nav-link">Men</a>
+                        <div class="submenu">
+                            <div class="submenu-column">
+                                <ul>
+                                    <li><a href="category.html?category=men&type=shirts">Shirts</a></li>
+                                    <li><a href="category.html?category=men&type=pants">Pants</a></li>
+                                    <li><a href="category.html?category=men&type=suits">Suits</a></li>
+                                    <li><a href="category.html?category=men&type=outerwear">Outerwear</a></li>
+                                </ul>
+                            </div>
+                            <div class="submenu-column featured">
+                                <div class="featured-item">
+                                    <img src="images/1-removebg-preview.png" alt="Men's Featured Collection">
+                                    <div class="featured-overlay">
+                                        <h4>Business Casual</h4>
+                                        <a href="collection.html?id=business-casual" class="btn-secondary">Shop Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="collections.html" class="nav-link">Collections</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="signup.html" class="nav-link" id="login-link">Login</a></li>
+                    <li class="nav-item"><a href="signup.html" class="nav-link" id="register-link">Create Account</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+        
+    <main id="main-content">
+        <!-- Content will be loaded dynamically -->
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="index.html" class="footer-logo">eG COLLECTIONS</a>
+                    <p>Offering timeless fashion with exceptional quality and meticulous attention to detail for the modern, style-conscious individual.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3 class="footer-title">Shop</h3>
+                    <ul>
+                        <li><a href="category.html?category=women">Women</a></li>
+                        <li><a href="category.html?category=men">Men</a></li>
+                        <li><a href="category.html?category=accessories">Accessories</a></li>
+                        <li><a href="sale.html">Sale</a></li>
+                        <li><a href="new-arrivals.html">New Arrivals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3 class="footer-title">Information</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="shipping.html">Shipping & Returns</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="size-guide.html">Size Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3 class="footer-title">My Account</h3>
+                    <ul>
+                        <li><a href="account.html">My Account</a></li>
+                        <li><a href="orders.html">Order History</a></li>
+                        <li><a href="wishlist.html">Wishlist</a></li>
+                        <li><a href="newsletter.html">Newsletter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="payment-methods">
+                    <img src="assets/images/payment-methods.png" alt="Accepted Payment Methods">
+                </div>
+                <p class="copyright">&copy; 2025 eG COLLECTIONS. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/signup.js" type="module"></script>
+    <script src="js/main.js" type="module"></script>
+</body>
+</html>
