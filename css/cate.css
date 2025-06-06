@@ -1609,4 +1609,7 @@ footer {
     align-items: flex-start;
     gap: var(--spacing-sm);
   }
+  .category-sidebar {
+   display: none;
+  }
 }
