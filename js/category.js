@@ -158,14 +158,6 @@ function openQuickView(productId) {
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="product-actions">
-                        <button class="btn-primary add-to-cart-modal" data-product-id="${product.id}">Add to Cart</button>
-                        <button class="btn-secondary add-to-wishlist-modal" data-product-id="${product.id}">
-                            <i class="far fa-heart"></i> Add to Wishlist
-                        </button>
-                    </div>
-                    
                     <div class="product-meta">
                         <div class="meta-item">
                             <span class="meta-label">Category:</span>
@@ -461,13 +453,13 @@ const productsData = {
         dresses: [
             {
                 id: 'w-dress-1',
-                name: 'Floral Summer Dress',
+                name: 'Dinner Wear',
                 price: 89.99,
                 salePrice: null,
                 rating: 4.5,
                 colors: ['Blue', 'Red', 'White'],
                 sizes: ['XS', 'S', 'M', 'L', 'XL'],
-                image: 'images/1-removebg-preview.png',
+                image: 'images/nt1.jpg',
                 category: 'women',
                 type: 'dresses',
                 isNew: true,
@@ -482,103 +474,73 @@ const productsData = {
                 rating: 4.8,
                 colors: ['Black', 'Navy', 'Burgundy'],
                 sizes: ['S', 'M', 'L'],
-                image: 'images/2-removebg-preview.png',
+                image: 'images/nt2.jpg',
                 category: 'women',
                 type: 'dresses',
                 isNew: false,
                 isFeatured: true,
                 dateAdded: '2025-03-20'
-            },
-            {
-                id: 'w-dress-3',
-                name: 'Casual Maxi Dress',
-                price: 69.99,
-                salePrice: null,
-                rating: 4.2,
-                colors: ['Green', 'Yellow', 'Pink'],
-                sizes: ['XS', 'S', 'M', 'L'],
-                image: 'images/11-removebg-preview.png',
-                category: 'women',
-                type: 'dresses',
-                isNew: true,
-                isFeatured: false,
-                dateAdded: '2025-05-01'
-            },
-            {
-                id: 'w-dress-4',
-                name: 'Cocktail Dress',
-                price: 119.99,
-                salePrice: null,
-                rating: 4.7,
-                colors: ['Red', 'Black'],
-                sizes: ['S', 'M', 'L'],
-                image: 'images/3-removebg-preview.png',
-                category: 'women',
-                type: 'dresses',
-                isNew: false,
-                isFeatured: true,
-                dateAdded: '2025-02-10'
             }
         ],
-        tops: [
+        Ladiescaftan: [
             {
-                id: 'w-top-1',
-                name: 'V-Neck Blouse',
+                id: 'w-caftan-1',
+                name: 'Church Wear',
                 price: 49.99,
                 salePrice: 39.99,
                 rating: 4.3,
                 colors: ['White', 'Black', 'Blue'],
                 sizes: ['XS', 'S', 'M', 'L', 'XL'],
-                image: 'images/4-removebg-preview.png',
+                image: 'images/dress2.jpg',
                 category: 'women',
-                type: 'tops',
+                type: 'Ladiescaftan',
                 isNew: true,
                 isFeatured: false,
                 dateAdded: '2025-04-25'
             },
             {
-                id: 'w-top-2',
-                name: 'Casual T-Shirt',
+                id: 'w-caftan-2',
+                name: 'Funeral Wear',
                 price: 29.99,
                 salePrice: null,
                 rating: 3.9,
                 colors: ['White', 'Gray', 'Pink', 'Blue'],
                 sizes: ['XS', 'S', 'M', 'L', 'XL'],
-                image: 'images/8-removebg-preview.png',
+                image: 'images/fn.jpg',
                 category: 'women',
-                type: 'tops',
+                type: 'Ladiescaftan',
                 isNew: false,
                 isFeatured: false,
                 dateAdded: '2025-03-15'
             }
         ],
-        bottoms: [
+        Slit: [
             {
-                id: 'w-bottom-1',
-                name: 'Slim Fit Jeans',
+                id: 'w-slit-1',
+                name: 'Slit and Kaba',
                 price: 79.99,
                 salePrice: null,
                 rating: 4.6,
                 colors: ['Blue', 'Black', 'Gray'],
                 sizes: ['24', '26', '28', '30', '32'],
-                image: 'images/w7.jpg',
+                image: 'images/sk1.jpg',
                 category: 'women',
-                type: 'bottoms',
+                type: 'Slit',
                 isNew: false,
                 isFeatured: true,
                 dateAdded: '2025-04-10'
             },
             {
-                id: 'w-bottom-2',
+                id: 'w-slit-2',
                 name: 'Pleated Skirt',
                 price: 59.99,
                 salePrice: 49.99,
                 rating: 4.1,
                 colors: ['Black', 'Navy', 'Beige'],
                 sizes: ['XS', 'S', 'M', 'L'],
-                image: 'images/9.jpg',
+                image: 'images/sk.jpg',
                 category: 'women',
-                type: 'bottoms',
+                type: 'Slit',
                 isNew: true,
                 isFeatured: false,
                 dateAdded: '2025-05-05'
@@ -589,7 +551,7 @@ const productsData = {
         shirts: [
             {
                 id: 'm-shirt-1',
-                name: 'Oxford Button-Down',
+                name: 'Men Caftan',
                 price: 69.99,
                 salePrice: null,
                 rating: 4.4,
@@ -618,9 +580,9 @@ const productsData = {
                 dateAdded: '2025-03-25'
             }
         ],
-        pants: [
+        Caftan: [
             {
-                id: 'm-pant-1',
+                id: 'm-caftan-1',
                 name: 'Chino Pants',
                 price: 89.99,
                 salePrice: null,
@@ -629,44 +591,244 @@ const productsData = {
                 sizes: ['30', '32', '34', '36', '38'],
                 image: 'images/1-removebg-preview.png',
                 category: 'men',
-                type: 'pants',
+                type: 'Caftan',
                 isNew: false,
                 isFeatured: true,
                 dateAdded: '2025-04-12'
             },
             {
-                id: 'm-pant-2',
-                name: 'Slim Fit Dress Pants',
+                id: 'm-caftan-2',
+                name: 'Men Funeral Wear',
                 price: 99.99,
                 salePrice: 79.99,
                 rating: 4.3,
                 colors: ['Black', 'Navy', 'Gray'],
                 sizes: ['30', '32', '34', '36'],
-                image: 'images/2-removebg-preview.png',
+                image: 'images/SHEIN.jpg',
                 category: 'men',
-                type: 'pants',
+                type: 'Caftan',
+                isNew: true,
+                isFeatured: false,
+                dateAdded: '2025-05-02'
+            }
+        ],
+        Politicalsuit: [
+            {
+                id: 'm-political-1',
+                name: 'Political Suit',
+                price: 69.99,
+                salePrice: null,
+                rating: 4.4,
+                colors: ['White', 'Blue', 'Pink'],
+                sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+                image: 'images/pts1.jpg',
+                category: 'men',
+                type: 'Politicalsuit',
+                isNew: true,
+                isFeatured: true,
+                dateAdded: '2025-04-20'
+            },
+            {
+                id: 'm-political-2',
+                name: 'Casual Political Suit',
+                price: 49.99,
+                salePrice: null,
+                rating: 4.2,
+                colors: ['Black', 'Navy', 'Gray', 'Red'],
+                sizes: ['S', 'M', 'L', 'XL'],
+                image: 'images/pts2.jpg',
+                category: 'men',
+                type: 'Politicalsuit',
+                isNew: false,
+                isFeatured: false,
+                dateAdded: '2025-03-25'
+            }
+        ],
+        Agbada: [
+            {
+                id: 'm-agbada-1',
+                name: 'Traditional Agbada',
+                price: 89.99,
+                salePrice: null,
+                rating: 4.5,
+                colors: ['Khaki', 'Navy', 'Olive'],
+                sizes: ['30', '32', '34', '36', '38'],
+                image: 'images/agaba.jpg',
+                category: 'men',
+                type: 'Agbada',
+                isNew: false,
+                isFeatured: true,
+                dateAdded: '2025-04-12'
+            },
+            {
+                id: 'm-agbada-2',
+                name: 'Modern Agbada',
+                price: 99.99,
+                salePrice: null,
+                rating: 4.3,
+                colors: ['Black', 'Navy', 'Gray'],
+                sizes: ['30', '32', '34', '36'],
+                image: 'images/agaba.jpg',
+                category: 'men',
+                type: 'Agbada',
+                isNew: false,
+                isFeatured: true,
+                dateAdded: '2025-04-12'
+            }
+        ],
+        Suit: [
+            {
+                id: 'm-suit-1',
+                name: 'Business Suit',
+                price: 69.99,
+                salePrice: null,
+                rating: 4.4,
+                colors: ['Black', 'Blue', 'Gray'],
+                sizes: ['S', 'M', 'L', 'XL', 'XXL'],
+                image: 'images/suit1.jpg',
+                category: 'men',
+                type: 'Suit',
+                isNew: true,
+                isFeatured: true,
+                dateAdded: '2025-04-20'
+            },
+            {
+                id: 'm-suit-2',
+                name: 'Wedding Suit',
+                price: 149.99,
+                salePrice: 129.99,
+                rating: 4.2,
+                colors: ['White', 'Navy', 'Gray', 'Black'],
+                sizes: ['S', 'M', 'L', 'XL'],
+                image: 'images/suit1.jpg',
+                category: 'men',
+                type: 'Suit',
+                isNew: false,
+                isFeatured: false,
+                dateAdded: '2025-03-25'
+            }
+        ],
+        Smock: [
+            {
+                id: 'm-smock-1',
+                name: 'Traditional Smock',
+                price: 89.99,
+                salePrice: null,
+                rating: 4.5,
+                colors: ['Khaki', 'Navy', 'Olive'],
+                sizes: ['30', '32', '34', '36', '38'],
+                image: 'images/smock.jpg',
+                category: 'men',
+                type: 'Smock',
+                isNew: false,
+                isFeatured: true,
+                dateAdded: '2025-04-12'
+            },
+            {
+                id: 'm-smock-2',
+                name: 'Modern Smock',
+                price: 99.99,
+                salePrice: 79.99,
+                rating: 4.3,
+                colors: ['Black', 'Navy', 'Gray'],
+                sizes: ['30', '32', '34', '36'],
+                image: 'images/smock.jpg',
+                category: 'men',
+                type: 'Smock',
                 isNew: true,
                 isFeatured: false,
                 dateAdded: '2025-05-02'
             }
         ]
     },
+    kids: {
+        shirts: [
+            {
+                id: 'k-shirt-1',
+                name: 'Kids Button-Down',
+                price: 39.99,
+                salePrice: null,
+                rating: 4.4,
+                colors: ['White', 'Blue', 'Pink'],
+                sizes: ['2T', '3T', '4T', '5T', '6T'],
+                image: 'images/11-removebg-preview.png',
+                category: 'kids',
+                type: 'shirts',
+                isNew: true,
+                isFeatured: true,
+                dateAdded: '2025-04-20'
+            },
+            {
+                id: 'k-shirt-2',
+                name: 'Kids Polo',
+                price: 29.99,
+                salePrice: 24.99,
+                rating: 4.2,
+                colors: ['Black', 'Navy', 'Gray', 'Red'],
+                sizes: ['2T', '3T', '4T', '5T'],
+                image: 'images/8-removebg-preview.png',
+                category: 'kids',
+                type: 'shirts',
+                isNew: false,
+                isFeatured: false,
+                dateAdded: '2025-03-25'
+            }
+        ],
+        Caftan: [
+            {
+                id: 'k-caftan-1',
+                name: 'Kids Caftan',
+                price: 49.99,
+                salePrice: null,
+                rating: 4.5,
+                colors: ['Blue', 'Pink', 'Yellow'],
+                sizes: ['2T', '3T', '4T', '5T', '6T'],
+                image: 'images/1-removebg-preview.png',
+                category: 'kids',
+                type: 'Caftan',
+                isNew: false,
+                isFeatured: true,
+                dateAdded: '2025-04-12'
+            },
+            {
+                id: 'k-caftan-2',
+                name: 'Kids Traditional Wear',
+                price: 39.99,
+                salePrice: 34.99,
+                rating: 4.3,
+                colors: ['Red', 'Blue', 'Green'],
+                sizes: ['2T', '3T', '4T', '5T'],
+                image: 'images/2-removebg-preview.png',
+                category: 'kids',
+                type: 'Caftan',
+                isNew: true,
+                isFeatured: false,
+                dateAdded: '2025-05-02'
+            }
+        ]
+    }
 };
 
 // Category banners data
 const categoryBanners = {
     women: {
-        image: 'images/W3.jpg',
+        image: 'images/typ.jpg',
         title: "Women's Collection",
         subtitle: "Elegant designs for the modern woman",
         cta: "Explore Now"
     },
     men: {
-        image: 'images/3-removebg-preview.png',
+        image: 'images/typ.jpg',
         title: "Men's Collection",
         subtitle: "Sophisticated styles for every occasion",
         cta: "Shop Collection"
     },
+    kids: {
+        image: 'images/typ.jpg',
+        title: "Kids Collection",
+        subtitle: "Fun and comfortable styles for children",
+        cta: "Shop Collection"
+    }
 };
 
 // Parse URL parameters
@@ -707,9 +869,6 @@ function sortProducts(products, sortBy) {
             break;
         case 'price-high':
             sortedProducts.sort((a, b) => (b.salePrice || b.price) - (a.salePrice || a.price));
-            break;
-        case 'rating':
-            sortedProducts.sort((a, b) => b.rating - a.rating);
             break;
         case 'featured':
         default:
@@ -876,16 +1035,6 @@ function createProductCard(product) {
             </a>
             ${product.isNew ? '<span class="product-badge new">New</span>' : ''}
             ${hasDiscount ? `<span class="product-badge sale">Sale</span>` : ''}
-            <div class="product-actions">
-                <button class="action-btn quick-view" data-product-id="${product.id}">
-                    <i class="fas fa-eye"></i>
-                    <span class="tooltip">Quick View</span>
-                </button>
-                <button class="action-btn add-to-wishlist" data-product-id="${product.id}">
-                    <i class="far fa-heart"></i>
-                    <span class="tooltip">Add to Wishlist</span>
-                </button>
-            </div>
         </div>
         <div class="product-info">
             <h3 class="product-name">
@@ -896,17 +1045,12 @@ function createProductCard(product) {
                                 <span class="original-price">$${originalPrice.toFixed(2)}</span>` 
                              : `<span class="regular-price">$${price.toFixed(2)}</span>`}
             </div>
-            <div class="product-rating">
-                ${createStarRating(product.rating)}
-                <span class="rating-count">(${Math.floor(product.rating * 10)})</span>
-            </div>
             <div class="product-colors">
                 ${product.colors.slice(0, 4).map(color => `
                     <span class="color-dot" style="background-color: ${getColorCode(color)};" title="${color}"></span>
                 `).join('')}
                 ${product.colors.length > 4 ? `<span class="color-more">+${product.colors.length - 4}</span>` : ''}
             </div>
-            <button class="btn-add-to-cart" data-product-id="${product.id}">Add to Cart</button>
         </div>
     `;
     
@@ -934,43 +1078,44 @@ function createProductCard(product) {
 function getProductDescription(product) {
     const descriptions = {
         dresses: "Elegant and versatile dress perfect for any occasion. Made with high-quality fabric for comfort and durability.",
-        tops: "Stylish and comfortable top that pairs well with any bottom. Great for casual or semi-formal settings.",
-        bottoms: "Well-fitted and comfortable bottom wear designed with premium materials for everyday elegance.",
+        Ladiescaftan: "Stylish and comfortable caftan that pairs well with any occasion. Great for casual or semi-formal settings.",
+        Slit: "Well-fitted and comfortable wear designed with premium materials for everyday elegance.",
         shirts: "Classic and refined shirt made with premium cotton. Perfect for business or casual settings.",
-        pants: "Sophisticated pants crafted with attention to detail. Offers both comfort and style for the modern man.",
-        bags: "Spacious and elegantly designed bag made with premium materials. Perfect for everyday use or special occasions.",
-        jewelry: "Exquisite piece that adds elegance to any outfit. Crafted with attention to detail for a timeless look.",
-        watches: "Precision timepiece with elegant design. Combines functionality with sophisticated style."
+        Caftan: "Sophisticated caftan crafted with attention to detail. Offers both comfort and style.",
+        Politicalsuit: "Professional political suit designed for formal occasions and business meetings.",
+        Agbada: "Traditional Agbada with modern touches, perfect for cultural events and celebrations.",
+        Suit: "Premium business suit crafted for the modern professional.",
+        Smock: "Traditional smock with contemporary styling for cultural and casual wear.",
     };
     
     return descriptions[product.type] || "Premium quality item from our exclusive collection, designed for style and comfort.";
 }
 
 // Create star rating HTML
-function createStarRating(rating) {
-    const fullStars = Math.floor(rating);
-    const hasHalfStar = rating % 1 >= 0.5;
-    const emptyStars = 5 - fullStars - (hasHalfStar ? 1 : 0);
+// function createStarRating(rating) {
+//     const fullStars = Math.floor(rating);
+//     const hasHalfStar = rating % 1 >= 0.5;
+//     const emptyStars = 5 - fullStars - (hasHalfStar ? 1 : 0);
     
-    let starsHTML = '';
+//     let starsHTML = '';
     
-    // Full stars
-    for (let i = 0; i < fullStars; i++) {
-        starsHTML += '<i class="fas fa-star"></i>';
-    }
+//     // Full stars
+//     for (let i = 0; i < fullStars; i++) {
+//         starsHTML += '<i class="fas fa-star"></i>';
+//     }
     
-    // Half star
-    if (hasHalfStar) {
-        starsHTML += '<i class="fas fa-star-half-alt"></i>';
-    }
+//     // Half star
+//     if (hasHalfStar) {
+//         starsHTML += '<i class="fas fa-star-half-alt"></i>';
+//     }
     
-    // Empty stars
-    for (let i = 0; i < emptyStars; i++) {
-        starsHTML += '<i class="far fa-star"></i>';
-    }
+//     // Empty stars
+//     for (let i = 0; i < emptyStars; i++) {
+//         starsHTML += '<i class="far fa-star"></i>';
+//     }
     
-    return starsHTML;
-}
+//     return starsHTML;
+// }
 
 // Get color code from color name
 function getColorCode(colorName) {

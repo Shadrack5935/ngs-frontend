@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/product.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="images/logo-removebg-preview.png" alt="" style="width: 150px;">
+                </div>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/men">Men</a></li>
+                        <li><a href="/women">Women</a></li>
+                        <li><a href="/about">About</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                     <div class="search-container">
+                        <input type="text" class="search-input" placeholder="Search...">
+                        <button class="search-btn"><i class="fas fa-search"></i></button>
+                    </div>
+                    <!-- <button class="header-btn">
+                        <i class="fas fa-heart"></i>
+                        <span class="wishlist-count">0</span>
+                    </button>
+                    <button class="header-btn">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="cart-count">0</span>
+                    </button> -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <nav class="breadcrumb-nav">
+                <a href="/">Home</a>
+                <span>/</span>
+                <a href="/men">Men</a>
+                <span>/</span>
+                <a href="/men/outerwear">Outerwear</a>
+                <span>/</span>
+                <span>Tailored Wool Blazer</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Product Section -->
+    <section class="product-section">
+        <div class="container">
+            <div class="product-grid">
+                <!-- Product Images -->
+                <div class="product-images">
+                    <div class="main-image">
+                        <img id="main-product-image" src="images/4-removebg-preview.png" alt="Tailored Wool Blazer">
+                        <div class="product-badges">
+                            <span class="badge new-badge">New</span>
+                        </div>
+                    </div>
+                    <div class="thumbnail-images">
+                        <div class="thumbnail active">
+                            <img src="images/4-removebg-preview.png" alt="View 1">
+                        </div>
+                        <div class="thumbnail">
+                            <img src="images/11-removebg-preview.png" alt="View 2">
+                        </div>
+                        <div class="thumbnail">
+                            <img src="images/pts2.jpg" alt="View 3">
+                        </div>
+                        <div class="thumbnail">
+                            <img src="images/M4.jpg" alt="View 4">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-info">
+                    <h1 class="product-title">Tailored Wool Blazer</h1>
+                    <div class="product-category">Men / Outerwear</div>
+                    
+                    <!-- <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="rating-value">(4.8) 156 reviews</span>
+                    </div> -->
+
+                    <div class="product-price">
+                        <span class="price">¢249.99</span>
+                    </div>
+
+                    <div class="product-description">
+                        <p>This premium tailored wool blazer features exceptional quality and craftsmanship, designed to elevate your style with its timeless appeal. Made from high-quality wool blend fabric, this blazer offers both comfort and sophistication for any formal or semi-formal occasion.</p>
+                        <p>Perfect for business meetings, dinner parties, or special events. The classic cut ensures a flattering fit while maintaining modern style elements.</p>
+                    </div>
+
+                    <!-- Product Options -->
+                    <div class="product-options">
+                        <div class="option-group">
+                            <label class="option-label">Size:</label>
+                            <div class="size-options">
+                                <div class="size-option" data-size="S">S</div>
+                                <div class="size-option active" data-size="M">M</div>
+                                <div class="size-option" data-size="L">L</div>
+                                <div class="size-option" data-size="XL">XL</div>
+                                <div class="size-option" data-size="XXL">XXL</div>
+                            </div>
+                        </div>
+
+                        <div class="option-group">
+                            <label class="option-label">Color:</label>
+                            <div class="color-options">
+                                <div class="color-option black active" data-color="black" title="Black"></div>
+                                <div class="color-option blue" data-color="blue" title="Navy Blue"></div>
+                                <div class="color-option gray" data-color="gray" title="Charcoal Gray"></div>
+                            </div>
+                        </div>
+
+                        <div class="option-group">
+                            <label class="option-label">Quantity:</label>
+                            <div class="quantity-selector">
+                                <button class="quantity-btn" id="decrease-qty">-</button>
+                                <input type="number" class="quantity-input" id="quantity" value="1" min="1" max="10">
+                                <button class="quantity-btn" id="increase-qty">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product Actions -->
+                    <div class="product-actions">
+                        <button class="btn btn-primary" id="add-to-cart">
+                            <i class="fas fa-shopping-bag"></i>
+                            Add to Cart
+                        </button>
+                        <button class="btn btn-secondary" id="add-to-wishlist">
+                            <i class="far fa-heart"></i>
+                            Wishlist
+                        </button>
+                    </div>
+
+                    <!-- Product Meta -->
+                    <div class="product-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">SKU:</span>
+                            <span class="meta-value">TWB-001</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Category:</span>
+                            <span class="meta-value">Men's Blazers</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Material:</span>
+                            <span class="meta-value">70% Wool, 30% Polyester</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Care:</span>
+                            <span class="meta-value">Dry Clean Only</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Availability:</span>
+                            <span class="meta-value">In Stock</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="related-products">
+        <div class="container">
+            <h2 class="section-title">Related Products</h2>
+            <div class="products-grid" id="related-products-grid">
+                <!-- Products will be loaded here -->
+            </div>
+        </div>
+    </section>
+    <script src="js/product.js"></script>
+</body>
+</html>

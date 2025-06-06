@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Define product data directly in the JavaScript
     const products = {
         newArrivals: [
             {
@@ -30,22 +29,22 @@ document.addEventListener('DOMContentLoaded', function() {
                 id: 'na3',
                 name: 'men',
                 category: 'men',
-                type: 'suits',
+                type: 'Suits',
                 price: 159.99,
                 salePrice: null,
-                image: 'images/8-removebg-preview.png',
+                image: 'images/pts2.jpg',
                 rating: 4.9,
                 isNew: true,
                 isBestseller: false
             },
             {
                 id: 'na4',
-                name: 'Classic Oxford Shirt',
+                name: 'Corporate shirt',
                 category: 'men',
-                type: 'shirts',
+                type: 'Corporate shirt',
                 price: 89.99,
                 salePrice: null,
-                image: 'images/2-removebg-preview.png',
+                image: 'images/M4.jpg',
                 rating: 4.6,
                 isNew: true,
                 isBestseller: true
@@ -54,24 +53,24 @@ document.addEventListener('DOMContentLoaded', function() {
         bestsellers: [
             {
                 id: 'bs1',
-                name: 'Silk Blouse',
+                name: 'Dinner Wear',
                 category: 'women',
                 type: 'tops',
                 price: 119.99,
                 salePrice: 89.99,
-                image: 'images/W2.jpg',
+                image: 'images/nt1.jpg',
                 rating: 4.9,
                 isNew: false,
                 isBestseller: true
             },
             {
                 id: 'bs2',
-                name: 'Bottom',
-                category: 'men',
-                type: 'belts',
+                name: 'Slit and Kaba',
+                category: 'women',
+                type: 'dress',
                 price: 79.99,
                 salePrice: null,
-                image: 'images/W5.jpg',
+                image: 'images/Sk.jpg',
                 rating: 4.8,
                 isNew: false,
                 isBestseller: true
@@ -91,11 +90,11 @@ document.addEventListener('DOMContentLoaded', function() {
             {
                 id: 'bs4',
                 name: 'outwear',
-                category: 'men',
-                type: 'pants',
+                category: 'women',
+                type: 'dress',
                 price: 129.99,
                 salePrice: 99.99,
-                image: 'images/W4.jpg',
+                image: 'images/dress1.jpg',
                 rating: 4.8,
                 isNew: false,
                 isBestseller: true
@@ -138,29 +137,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
                 <div class="product-image">
                     <img src="${product.image}" alt="${product.name}">
-                    <div class="product-actions">
-                        <button class="btn-quick-view" data-id="${product.id}">
-                            <i class="fas fa-eye"></i>
-                        </button>
-                        <button class="btn-wishlist" data-id="${product.id}">
-                            <i class="far fa-heart"></i>
-                        </button>
-                        <button class="btn-add-to-cart" data-id="${product.id}">
-                            <i class="fas fa-shopping-bag"></i>
-                        </button>
-                    </div>
                 </div>
                 <div class="product-details">
                     <h3 class="product-title">
                         <a href="product.html?id=${product.id}">${product.name}</a>
                     </h3>
                     <div class="product-category">${capitalizeFirstLetter(product.category)} / ${capitalizeFirstLetter(product.type)}</div>
-                    <div class="product-rating">
-                        <div class="stars">
-                            ${starsHtml}
-                        </div>
-                        <span class="rating-value">(${product.rating})</span>
-                    </div>
                     <div class="product-price">
                         ${priceDisplay}
                     </div>
@@ -367,48 +349,48 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Function to add product to cart
-    function addToCart(productId) {
-        // Get cart from localStorage
-        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    // function addToCart(productId) {
+    //     // Get cart from localStorage
+    //     let cart = JSON.parse(localStorage.getItem('cart')) || [];
         
-        // Check if product is already in cart
-        const existingItem = cart.find(item => item.id === productId);
+    //     // Check if product is already in cart
+    //     const existingItem = cart.find(item => item.id === productId);
         
-        if (existingItem) {
-            // Increase quantity
-            existingItem.quantity += 1;
-        } else {
-            // Add new item
-            cart.push({
-                id: productId,
-                quantity: 1,
-                dateAdded: new Date().toISOString()
-            });
-        }
+    //     if (existingItem) {
+    //         // Increase quantity
+    //         existingItem.quantity += 1;
+    //     } else {
+    //         // Add new item
+    //         cart.push({
+    //             id: productId,
+    //             quantity: 1,
+    //             dateAdded: new Date().toISOString()
+    //         });
+    //     }
         
-        // Update localStorage
-        localStorage.setItem('cart', JSON.stringify(cart));
+    //     // Update localStorage
+    //     localStorage.setItem('cart', JSON.stringify(cart));
         
-        // Show notification
-        showNotification('Product added to cart');
+    //     // Show notification
+    //     showNotification('Product added to cart');
         
-        // Update cart count badge
-        updateCartCount();
-    }
+    //     // Update cart count badge
+    //     updateCartCount();
+    // }
 
     // Function to update cart count badge
-    function updateCartCount() {
-        const cart = JSON.parse(localStorage.getItem('cart')) || [];
-        const count = cart.reduce((total, item) => total + item.quantity, 0);
+    // function updateCartCount() {
+    //     const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    //     const count = cart.reduce((total, item) => total + item.quantity, 0);
         
-        document.querySelector('.cart-count').textContent = count;
-    }
+    //     document.querySelector('.cart-count').textContent = count;
+    // }
 
     // Function to update wishlist count badge
-    function updateWishlistCount() {
-        const wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
-        document.querySelector('.wishlist-count').textContent = wishlist.length;
-    }
+    // function updateWishlistCount() {
+    //     const wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+    //     document.querySelector('.wishlist-count').textContent = wishlist.length;
+    // }
 
     // Function to show notification
     function showNotification(message) {
@@ -484,36 +466,36 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Newsletter form handling
-    function initNewsletterForm() {
-        const form = document.getElementById('newsletter-form');
-        const response = document.getElementById('newsletter-response');
+    // function initNewsletterForm() {
+    //     const form = document.getElementById('newsletter-form');
+    //     const response = document.getElementById('newsletter-response');
         
-        if (!form) return;
+    //     if (!form) return;
         
-        form.addEventListener('submit', function(e) {
-            e.preventDefault();
+    //     form.addEventListener('submit', function(e) {
+    //         e.preventDefault();
             
-            const email = form.querySelector('input').value;
+    //         const email = form.querySelector('input').value;
             
-            // Simple validation
-            if (!email || !email.includes('@')) {
-                response.textContent = 'Please enter a valid email address.';
-                response.className = 'newsletter-response error';
-                return;
-            }
+    //         // Simple validation
+    //         if (!email || !email.includes('@')) {
+    //             response.textContent = 'Please enter a valid email address.';
+    //             response.className = 'newsletter-response error';
+    //             return;
+    //         }
             
-            // Simulate successful subscription
-            form.reset();
-            response.textContent = 'Thank you for subscribing to our newsletter!';
-            response.className = 'newsletter-response success';
+    //         // Simulate successful subscription
+    //         form.reset();
+    //         response.textContent = 'Thank you for subscribing to our newsletter!';
+    //         response.className = 'newsletter-response success';
             
-            // Clear success message after 3 seconds
-            setTimeout(() => {
-                response.textContent = '';
-                response.className = 'newsletter-response';
-            }, 3000);
-        });
-    }
+    //         // Clear success message after 3 seconds
+    //         setTimeout(() => {
+    //             response.textContent = '';
+    //             response.className = 'newsletter-response';
+    //         }, 3000);
+    //     });
+    // }
 
     // Mobile menu toggle
     function initMobileMenu() {
@@ -558,3 +540,15 @@ document.addEventListener('DOMContentLoaded', function() {
     // Run initialization
     init();
 });
+
+/* <div class="product-actions">
+                        <button class="btn-quick-view" data-id="${product.id}">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                        <button class="btn-wishlist" data-id="${product.id}">
+                            <i class="far fa-heart"></i>
+                        </button>
+                        <button class="btn-add-to-cart" data-id="${product.id}">
+                            <i class="fas fa-shopping-bag"></i>
+                        </button>
+                    </div> */

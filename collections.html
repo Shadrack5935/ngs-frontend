@@ -11,18 +11,16 @@
     <link rel="stylesheet" href="css/collection.css">
 </head>
 <body>
-    <header id="header">
+ <header id="header">
         <div class="container">
-            <div class="header-top">
-                <a href="index.html" class="logo">
-                    <img src="images/logo-removebg-preview.png" alt="eGCollections" style="width: 100px; cursor: pointer;">
-                </a>
+             <div class="header-top">
+               <a href="index.html" class="logo"><img src="images/logo-removebg-preview.png " alt="eGCollections" style="width: 150px; cursor: pointer;"></a>
                 <div class="header-actions">
                     <div class="search-container">
-                        <input type="text" class="search-input" placeholder="Search collections...">
+                        <input type="text" class="search-input" placeholder="Search...">
                         <button class="search-btn"><i class="fas fa-search"></i></button>
                     </div>
-                    <a href="signup.html" class="header-icon">
+                    <!-- <a href="signup.html" class="header-icon">
                         <i class="fas fa-user"></i>
                     </a>
                     <a href="wishlist.html" class="header-icon">
@@ -32,21 +30,63 @@
                     <a href="cart.html" class="header-icon cart-icon">
                         <i class="fas fa-shopping-bag"></i>
                         <span class="count-badge cart-count">0</span>
-                    </a>
+                    </a> -->
                 </div>
             </div>
             <nav class="main-navigation">
+                <button class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
                 <ul class="main-nav">
-                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item">
+                    <li class="nav-item active" ><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item has-submenu">
                         <a href="category.html?category=women" class="nav-link">Women</a>
+                        <div class="submenu">
+                            <div class="submenu-column">
+                                <ul>
+                                    <li><a href="category.html?category=women&type=dresses">Dresses</a></li>
+                                    <li><a href="category.html?category=women&type=tops">Tops</a></li>
+                                    <li><a href="category.html?category=women&type=bottoms">Bottoms</a></li>
+                                    <li><a href="category.html?category=women&type=outerwear">Outerwear</a></li>
+                                </ul>
+                            </div>
+                            <div class="submenu-column featured">
+                                <div class="featured-item">
+                                    <img src="images/w3.jpg" alt="Women's Featured Collection">
+                                    <div class="featured-overlay">
+                                        <h4>Women Fashion 2025</h4>
+                                        <a href="collections.html?category=women" class="btn-secondary">Shop Now</a>
+                                    </div>
+                                </div>
+                            </div>
                     </li>
-                    <li class="nav-item">
-                        <a href="category.html?category=men" class="nav-link">Men</a>
+                    <li class="nav-item has-submenu">
+                         <a href="category.html?category=men" class="nav-link">Men</a>
+                        <div class="submenu">
+                            <div class="submenu-column">
+                                <ul>
+                                    <li><a href="category.html?category=men&type=shirts">Shirts</a></li>
+                                    <li><a href="category.html?category=men&type=pants">Pants</a></li>
+                                    <li><a href="category.html?category=men&type=suits">Suits</a></li>
+                                    <li><a href="category.html?category=men&type=outerwear">Agbada</a></li>
+                                </ul>
+                            </div>
+                            <div class="submenu-column featured">
+                                <div class="featured-item">
+                                    <img src="images/1-removebg-preview.png" alt="Men's Featured Collection">
+                                    <div class="featured-overlay">
+                                        <h4>Business Casual</h4>
+                                        <a href="collections.html" class="btn-secondary">Shop Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </li>
-                    <li class="nav-item active"><a href="collections.html" class="nav-link">Collections</a></li>
+                    <li class="nav-item"><a href="collections.html" class="nav-link">Collections</a></li>
                     <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
-                    <li class="nav-item"><a href="signup.html" class="nav-link">SignUp</a></li>
+                    <!-- <li class="nav-item"><a href="signup.html" class="nav-link">SignUp</a></li> -->
                 </ul>
             </nav>
         </div>
@@ -73,8 +113,8 @@
                     </select>
                     <select class="filter-select" id="season-filter">
                         <option value="all">All Seasons</option>
-                        <option value="spring">Spring 2025</option>
-                        <option value="summer">Summer 2025</option>
+                        <option value="spring">weddings</option>
+                        <option value="summer">Funeral</option>
                         <option value="formal">Formal Wear</option>
                         <option value="business">Business Casual</option>
                     </select>
@@ -102,27 +142,27 @@
         <div class="container">
             <div class="collections-grid" id="collections-grid">
                 <!-- Spring 2025 Collection -->
-                <div class="collection-card" data-category="women" data-season="spring">
+                <div class="collection-card" data-category="women" data-season="business-casual">
                     <div class="collection-image">
-                        <img src="images/8-removebg-preview.png" alt="Spring 2025 Women's Collection">
+                        <img src="images/dress1.jpg" alt="Spring 2025 Women's Collection">
                         <div class="collection-overlay">
                             <div style="color: white;">
-                                <h4>Elegant Spring Styles</h4>
+                                <h4>Dinner Wears</h4>
                                 <p>Fresh and vibrant designs</p>
                             </div>
                         </div>
                         <div class="collection-badge">New</div>
                     </div>
                     <div class="collection-content">
-                        <h3 class="collection-title">Spring Elegance 2025</h3>
-                        <p class="collection-description">Embrace the season with our exclusive spring collection featuring lightweight fabrics, vibrant colors, and timeless designs perfect for any occasion.</p>
+                        <h3 class="collection-title">Dinner Wear 2025</h3>
+                        <p class="collection-description">Embrace the season with our exclusive dinner collection featuring lightweight fabrics, vibrant colors, and timeless designs perfect for any occasion.</p>
                         <div class="collection-meta">
                             <span>24 Items</span>
                             <span>Women's Fashion</span>
                         </div>
                         <div class="collection-price">Starting from GH₵150</div>
                         <div class="collection-actions">
-                            <a href="collection.html?id=spring-2025" class="btn-primary">Shop Collection</a>
+                            <a href="collections.html?id=spring-2025" class="btn-primary">Shop Collection</a>
                             <a href="#" class="btn-secondary">Preview</a>
                         </div>
                     </div>
@@ -185,21 +225,21 @@
                 <!-- Summer Collection -->
                 <div class="collection-card" data-category="women" data-season="summer">
                     <div class="collection-image">
-                        <img src="images/3-removebg-preview.png" alt="Summer Collection">
+                        <img src="images/SHEIN.jpg" alt="Summer Collection">
                         <div class="collection-overlay">
                             <div style="color: white;">
-                                <h4>Summer Vibes</h4>
+                                <h4>Men Funeral Wear</h4>
                                 <p>Light and breezy styles</p>
                             </div>
                         </div>
                         <div class="collection-badge">Hot</div>
                     </div>
                     <div class="collection-content">
-                        <h3 class="collection-title">Summer Breeze</h3>
-                        <p class="collection-description">Light, airy, and comfortable pieces perfect for the warm season. Featuring breathable fabrics and vibrant African-inspired prints.</p>
+                        <h3 class="collection-title">Funeral Wear</h3>
+                        <p class="collection-description">Light, airy, and comfortable pieces perfect for Funerals. Featuring breathable fabrics and vibrant African-inspired prints.</p>
                         <div class="collection-meta">
                             <span>28 Items</span>
-                            <span>Summer Wear</span>
+                            <span>Funeral Wear</span>
                         </div>
                         <div class="collection-price">Starting from GH₵120</div>
                         <div class="collection-actions">
@@ -212,17 +252,164 @@
                 <!-- Men's Casual Collection -->
                 <div class="collection-card" data-category="men" data-season="spring">
                     <div class="collection-image">
-                        <img src="images/1-removebg-preview.png" alt="Men's Casual Collection">
+                        <img src="images/pts1.jpg" alt="Men's Casual Collection">
                         <div class="collection-overlay">
                             <div style="color: white;">
-                                <h4>Casual Comfort</h4>
+                                <h4>Political suit</h4>
                                 <p>Relaxed everyday style</p>
                             </div>
                         </div>
                     </div>
                     <div class="collection-content">
-                        <h3 class="collection-title">Urban Casual</h3>
-                        <p class="collection-description">Comfortable and stylish casual wear for the modern man. Perfect for weekends, casual outings, and relaxed social gatherings.</p>
+                        <h3 class="collection-title">Political Suit </h3>
+                        <p class="collection-description">Comfortable and stylish Political suit  for the modern man. Perfect for office, outings, and relaxed social gatherings.</p>
+                        <div class="collection-meta">
+                            <span>22 Items</span>
+                            <span>Political suit</span>
+                        </div>
+                        <div class="collection-price">Starting from GH₵100</div>
+                        <div class="collection-actions">
+                            <a href="collection.html?id=urban-casual" class="btn-primary">Shop Collection</a>
+                            <a href="#" class="btn-secondary">Preview</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="collection-card" data-category="men" data-season="spring">
+                    <div class="collection-image">
+                        <img src="images/agaba.jpg" alt="Men's Casual Collection">
+                        <div class="collection-overlay">
+                            <div style="color: white;">
+                                <h4>Agbada</h4>
+                                <p>Relaxed everyday style</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collection-content">
+                        <h3 class="collection-title">Agbada</h3>
+                        <p class="collection-description">Comfortable and stylish Agbada for the modern man. Perfect for office, outings, and relaxed social gatherings.</p>
+                        <div class="collection-meta">
+                            <span>22 Items</span>
+                            <span>Agbada</span>
+                        </div>
+                        <div class="collection-price">Starting from GH₵100</div>
+                        <div class="collection-actions">
+                            <a href="collection.html?id=urban-casual" class="btn-primary">Shop Collection</a>
+                            <a href="#" class="btn-secondary">Preview</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="collection-card" data-category="men" data-season="spring">
+                    <div class="collection-image">
+                        <img src="images/Wc1.jpg" alt="Men's Casual Collection">
+                        <div class="collection-overlay">
+                            <div style="color: white;">
+                                <h4>Ladies caftan </h4>
+                                <p>Relaxed everyday style</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collection-content">
+                        <h3 class="collection-title">Ladies caftan  </h3>
+                        <p class="collection-description">Comfortable and stylish Ladies caftan   for the modern man. Perfect for office, outings, and relaxed social gatherings.</p>
+                        <div class="collection-meta">
+                            <span>22 Items</span>
+                            <span>Ladies caftan</span>
+                        </div>
+                        <div class="collection-price">Starting from GH₵100</div>
+                        <div class="collection-actions">
+                            <a href="collection.html?id=urban-casual" class="btn-primary">Shop Collection</a>
+                            <a href="#" class="btn-secondary">Preview</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="collection-card" data-category="men" data-season="spring">
+                    <div class="collection-image">
+                        <img src="images/Sk.jpg" alt="Men's Casual Collection">
+                        <div class="collection-overlay">
+                            <div style="color: white;">
+                                <h4>Slit and Kaba</h4>
+                                <p>Relaxed everyday style</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collection-content">
+                        <h3 class="collection-title">Slit and Kaba</h3>
+                        <p class="collection-description">Comfortable and stylish Slit and Kaba  for the modern man. Perfect for office, outings, and relaxed social gatherings.</p>
+                        <div class="collection-meta">
+                            <span>22 Items</span>
+                            <span>Men's Casual</span>
+                        </div>
+                        <div class="collection-price">Starting from GH₵100</div>
+                        <div class="collection-actions">
+                            <a href="collection.html?id=urban-casual" class="btn-primary">Shop Collection</a>
+                            <a href="#" class="btn-secondary">Preview</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="collection-card" data-category="men" data-season="spring">
+                    <div class="collection-image">
+                        <img src="images/fn2.jpg" alt="Men's Casual Collection">
+                        <div class="collection-overlay">
+                            <div style="color: white;">
+                                <h4>Ladies Funeral Wear</h4>
+                                <p>Relaxed everyday style</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collection-content">
+                        <h3 class="collection-title">Ladies Funeral Wear </h3>
+                        <p class="collection-description">Comfortable and stylish Ladies Funeral Wear  for the modern man. Perfect for Funerals.</p>
+                        <div class="collection-meta">
+                            <span>22 Items</span>
+                            <span>Ladies Funeral Wear</span>
+                        </div>
+                        <div class="collection-price">Starting from GH₵100</div>
+                        <div class="collection-actions">
+                            <a href="collection.html?id=urban-casual" class="btn-primary">Shop Collection</a>
+                            <a href="#" class="btn-secondary">Preview</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="collection-card" data-category="men" data-season="spring">
+                    <div class="collection-image">
+                        <img src="images/suit2.jpg" alt="Men's Casual Collection">
+                        <div class="collection-overlay">
+                            <div style="color: white;">
+                                <h4>suits</h4>
+                                <p>Relaxed everyday style</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collection-content">
+                        <h3 class="collection-title">suits </h3>
+                        <p class="collection-description">Comfortable and stylish Political suit  for the modern man. Perfect for office, outings, and relaxed social gatherings.</p>
+                        <div class="collection-meta">
+                            <span>22 Items</span>
+                            <span>suits</span>
+                        </div>
+                        <div class="collection-price">Starting from GH₵100</div>
+                        <div class="collection-actions">
+                            <a href="collection.html?id=urban-casual" class="btn-primary">Shop Collection</a>
+                            <a href="#" class="btn-secondary">Preview</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="collection-card" data-category="men" data-season="spring">
+                    <div class="collection-image">
+                        <img src="images/wedding2.jpg" alt="Men's Casual Collection">
+                        <div class="collection-overlay">
+                            <div style="color: white;">
+                                <h4>weddings Wear</h4>
+                                <p>Relaxed everyday style</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collection-content">
+                        <h3 class="collection-title">weddings Wear</h3>
+                        <p class="collection-description">Comfortable and stylish weddings Wear  for the modern woman. Perfect for weddings.</p>
                         <div class="collection-meta">
                             <span>22 Items</span>
                             <span>Men's Casual</span>
@@ -238,7 +425,7 @@
                 <!-- African Heritage Collection -->
                 <div class="collection-card" data-category="couples" data-season="formal">
                     <div class="collection-image">
-                        <img src="images/2-removebg-preview.png" alt="African Heritage Collection">
+                        <img src="images/smock.jpg" alt="African Heritage Collection">
                         <div class="collection-overlay">
                             <div style="color: white;">
                                 <h4>Cultural Pride</h4>
@@ -297,7 +484,7 @@
                     </div>
                 </div>
                 <div class="footer-links">
-                    <h3 class="footer-title">Shop</h3>
+                    <h3 class="footer-title" style="color: #fff;">Shop</h3>
                     <ul>
                         <li><a href="category.html?category=women">Women</a></li>
                         <li><a href="category.html?category=men">Men</a></li>
@@ -305,16 +492,16 @@
                     </ul>
                 </div>
                 <div class="footer-links">
-                    <h3 class="footer-title">Information</h3>
+                    <h3 class="footer-title" style="color: #fff;">Information</h3>
                     <ul>
                         <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="about.html">Contact Us</a></li>
                         <li><a href="#">Shipping & Returns</a></li>
                         <li><a href="#">FAQ</a></li>
                         <li><a href="#">Size Guide</a></li>
                     </ul>
                 </div>
-                <div class="footer-links">
+                <!-- <div class="footer-links">
                     <h3 class="footer-title">My Account</h3>
                     <ul>
                         <li><a href="account.html">My Account</a></li>
@@ -322,7 +509,7 @@
                         <li><a href="wishlist.html">Wishlist</a></li>
                         <li><a href="#">Newsletter</a></li>
                     </ul>
-                </div>
+                </div> -->
             </div>
             <div class="footer-bottom">
                 <p class="copyright">&copy; 2025 eG COLLECTIONS. All Rights Reserved.</p>

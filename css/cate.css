@@ -537,22 +537,6 @@ h4 {
   border-color: var(--primary-color);
 }
 
-.rating-option {
-  display: flex;
-  align-items: center;
-  margin-bottom: 8px;
-  cursor: pointer;
-}
-
-.rating-option input {
-  margin-right: 8px;
-}
-
-.rating-stars {
-  color: #ffc107;
-  margin-right: 5px;
-}
-
 .filter-actions {
   display: flex;
   gap: 10px;
